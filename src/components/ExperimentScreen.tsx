@@ -25,7 +25,7 @@ export function ExperimentScreen({
   const [playedSets, setPlayedSets] = useState<Set<string>>(new Set());
   const [selectedResponse, setSelectedResponse] = useState<'longer' | 'equal' | 'shorter' | null>(null);
 
-  const handlePlay = (set: string) => {
+  const handlePlay = () => {
     onPlay();
   };
 
@@ -61,7 +61,7 @@ export function ExperimentScreen({
               label="Sequence A"
               sequence={trial.sequenceA}
               disabled={isPlaying}
-              onPlay={() => handlePlay('A')}
+              onPlay={() => handlePlay()}
               onComplete={() => handleComplete('A')}
               isPlayed={playedSets.has('A')}
             />
@@ -72,7 +72,7 @@ export function ExperimentScreen({
               label="Sequence B"
               sequence={trial.sequenceB}
               disabled={isPlaying}
-              onPlay={() => handlePlay('B')}
+              onPlay={() => handlePlay()}
               onComplete={() => handleComplete('B')}
               isPlayed={playedSets.has('B')}
             />
