@@ -1,0 +1,97 @@
+MODEL RESULTS
+Model Accuracy: 0.43548387096774194
+
+
+
+Accuracy by Pitch Condition (Model):
+pitch_condition
+H    0.458065
+L    0.402597
+S    0.445513
+
+Accuracy by Interval Condition (Model):
+interval_label
+L    0.304487
+M    0.770227
+S    0.233010
+
+Human Response Distribution by Pitch (Model) (proportions):
+pitch_condition  human_response
+H                equal             0.580645
+                 longer            0.209677
+                 shorter           0.209677
+L                equal             0.548701
+                 shorter           0.240260
+                 longer            0.211039
+S                equal             0.599359
+                 shorter           0.230769
+                 longer            0.169872
+
+Model Response Distribution by Pitch (proportions):
+pitch_condition  model_response
+H                equal             0.354839
+                 longer            0.325806
+                 shorter           0.319355
+L                equal             0.376623
+                 longer            0.321429
+                 shorter           0.301948
+S                equal             0.397436
+                 longer            0.304487
+                 shorter           0.298077
+
+HUMAN DATA ANALYSIS
+Overall Human Accuracy: 0.4258064516129032
+
+Accuracy by Pitch Condition (Human):
+pitch_condition
+H    0.448387
+L    0.402597
+S    0.426282
+
+Accuracy by Interval Condition (Human):
+interval_label
+L    0.301282
+M    0.776699
+S    0.200647
+
+Human Response Distribution by Pitch (Human) (proportions):
+pitch_condition  response
+H                equal       0.580645
+                 longer      0.209677
+                 shorter     0.209677
+L                equal       0.548701
+                 shorter     0.240260
+                 longer      0.211039
+S                equal       0.599359
+                 shorter     0.230769
+                 longer      0.169872
+
+Response Distribution by Pitch and True Relation (Human):
+pitch_condition  true_relation  response
+H                equal          equal       0.813725
+                                shorter     0.098039
+                                longer      0.088235
+                 longer         equal       0.336449
+                                longer      0.336449
+                                shorter     0.327103
+                 shorter        equal       0.603960
+                                longer      0.198020
+                                shorter     0.198020
+L                equal          equal       0.690000
+                                shorter     0.180000
+                                longer      0.130000
+                 longer         equal       0.343137
+                                shorter     0.333333
+                                longer      0.323529
+                 shorter        equal       0.613208
+                                shorter     0.207547
+                                longer      0.179245
+S                equal          equal       0.822430
+                                shorter     0.130841
+                                longer      0.046729
+                 longer         equal       0.388350
+                                shorter     0.368932
+                                longer      0.242718
+                 shorter        equal       0.578431
+                                longer      0.225490
+                                shorter     0.196078
